@@ -1,0 +1,133 @@
+/* 
+🇹🇷 Sayfa genel stil ayarları 
+🇬🇧 General page style settings 
+🇩🇪 Allgemeine Seitenstil-Einstellungen 
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./background1.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* 
+🇹🇷 Form kutusunun ana kapsayıcısı 
+🇬🇧 Main container for the login form 
+🇩🇪 Hauptcontainer für das Login-Formular 
+*/
+.container{
+    width: 300px;
+    padding: 0px 16px;
+    text-align: center;
+    background:url(./woman.jpg);
+    background-size: cover;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius:15px;
+  
+
+}
+
+/* 
+  🇹🇷 Odaklandığında stil değişir (Tab veya tıklandığında)
+  🇬🇧 When focused (by Tab or click), style changes
+  🇩🇪 Wenn fokussiert (durch Tab oder Klick), ändert sich der Stil
+  */
+
+/* Input odak efekti (klavye ile gezinmede görünür olur) */
+.container input:focus {
+    outline: none; /* Tarayıcının varsayılan çerçevesini kaldır */
+    border-bottom: 4px solid rgb(50, 228, 50); /* Alt kenarlığı yeşil yap */
+    background-color: rgba(255, 255, 255, 0.05); /* Hafif arka plan parlaması */
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.3); /* Hafif dış gölge */
+}
+
+/* 
+🇹🇷 Başlık stil ayarı 
+🇬🇧 Heading style 
+🇩🇪 Überschrift-Stil 
+*/
+.container h1{
+    margin-top: 100px;
+    color: azure;
+    font-size: 40px;
+}
+
+/* 
+🇹🇷 Input alanlarının ortak stil ayarları 
+🇬🇧 Common style for input fields 
+🇩🇪 Gemeinsamer Stil für Eingabefelder 
+*/
+.container input{
+    display: block;
+    width: 100%;
+    padding:0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    background: transparent;
+    color: azure;
+    font-size: 15px;
+    border-bottom: solid 4px rgb(22, 47, 25);
+}
+
+/* Hover efekti */
+.container input:hover{
+    background: rgb(14, 40, 13);
+    
+    
+}
+.input-text{
+    margin: 5px;
+}
+.input-text::placeholder{
+    color:rgb(121, 110, 110);
+}
+
+/* 
+🇹🇷 Giriş butonu 
+🇬🇧 Login button 
+🇩🇪 Login-Schaltfläche 
+*/
+.btn-login{
+    margin: 12px;
+    width: 290px;
+    height: 40px;
+    border-radius: 0px 25px 0px 23px;
+    background-color: transparent;
+    transition: 0.8s;
+    display: block;
+    color: green;
+    cursor: pointer;
+    border:2px solid green;
+    font-weight: bold;
+}
+
+.btn-login:hover{
+    color:rgb(249, 251, 249);
+    background: rgb(2, 73, 2);
+    transform: scale(0.96);
+}
+
+/* 
+🇹🇷 Alt bağlantılar (kayıt ol, şifreyi unuttum)
+🇬🇧 Footer links (register, forgot password)
+🇩🇪 Fußzeilen-Links (Registrieren, Passwort vergessen)
+*/
+.footer{
+    font-size:10px;
+    color: rgb(244, 65, 65);
+    display: block;
+}
+
+.footer:hover{
+    color: #ffff;
+    cursor: pointer;
+    
+}
